@@ -21,22 +21,22 @@ const RecipeRow = ({ recipe, getRecipe }) => (
   </li>
 );
 
-const PageButton = (page, type) => {
-  const classname = `btn-inline results__btn--${type}`;
-  const goTo = type === "prev" ? page - 1 : page + 1;
-  const svgHref = `img/icons.svg#icon-triangle-${
-    type === "prev" ? "left" : "right"
-  }`;
+// const PageButton = (page, type) => {
+//   const classname = `btn-inline results__btn--${type}`;
+//   const goTo = type === "prev" ? page - 1 : page + 1;
+//   const svgHref = `img/icons.svg#icon-triangle-${
+//     type === "prev" ? "left" : "right"
+//   }`;
 
-  return (
-    <button className={classname} data-goto={goTo}>
-      <span>Page {goTo}</span>
-      <svg className='search__icon'>
-        <use href={svgHref}></use>
-      </svg>
-    </button>
-  );
-};
+//   return (
+//     <button className={classname} data-goto={goTo}>
+//       <span>Page {goTo}</span>
+//       <svg className='search__icon'>
+//         <use href={svgHref}></use>
+//       </svg>
+//     </button>
+//   );
+// };
 
 export default function Results({ loading, recipes, getRecipe }) {
   const getRecipesPerPage = (recipes, page = 1, resPerPage = 10) => {

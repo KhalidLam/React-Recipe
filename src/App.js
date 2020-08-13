@@ -5,7 +5,6 @@ import Header from "./components/header/Header";
 import Results from "./components/results/Results";
 import Recipe from "./components/recipe/Recipe";
 import Shopping from "./components/shopping/Shopping";
-import "./App.css";
 
 function App() {
   const [recipes, setRecipes] = useState([]);

@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "../Loader";
+// import Loader from "../Loader";
 import { calcTime } from "../Helper";
 
 export default function Recipe({ loading, recipe }) {
@@ -159,7 +159,7 @@ export default function Recipe({ loading, recipe }) {
             <a
               className='btn-small recipe__btn'
               href='http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/'
-              target='_blank'
+              // target='_blank'
             >
               <span>Directions</span>
               <svg className='search__icon'>
